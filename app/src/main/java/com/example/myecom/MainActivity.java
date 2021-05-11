@@ -22,13 +22,20 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(b.getRoot());
 
-        Toast.makeText(this, "Hello World !", Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Decrements  counter by 1
+     * @param view
+     */
     public void decQty(View view) {
         b.qty.setText(""+ --qty);
     }
 
+    /**
+     * Increments counter by 1
+     * @param view
+     */
     public void incQty(View view) {
         b.qty.setText(""+ ++qty);
     }
